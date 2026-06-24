@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracotta: #C2593F;
+  --color-terracotta-dark: #A5442C;
+  --color-terracotta-light: #D6725A;
+  --color-saffron: #E5A93B;
+  --color-saffron-light: #F7D58B;
+  --color-saffron-dark: #C98E2A;
+  --color-majorelle: #0D33B2;
+  --color-majorelle-light: #2A51CF;
+  --color-majorelle-dark: #092482;
+  --color-sand: #FDFBF7;
+  --color-sand-dark: #F5EFEB;
+  --color-charcoal: #2C2523;
+  --color-charcoal-light: #4E4340;
+  
+  --font-sans: 'Heebo', 'Rubik', sans-serif;
+  --font-serif: 'Rubik', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Heebo', 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+/* Moroccan Zellij Tile Patterns */
+.bg-zellij {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23C2593F' fill-opacity='0.04'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40l20 20-20 20-20-20 20-20zM0 40l20 20-20 20V40zm80 0L60 60l20 20V40z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-zellij-dark {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23E5A93B' fill-opacity='0.08'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40l20 20-20 20-20-20 20-20zM0 40l20 20-20 20V40zm80 0L60 60l20 20V40z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Islamic Star/Arch details */
+.moroccan-border {
+  border-image: linear-gradient(to right, #C2593F, #E5A93B, #C2593F) 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2593F;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A5442C;
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+  background: rgba(253, 251, 247, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(194, 89, 63, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(194, 89, 63, 0.1);
+}
+
+/* Soft Load Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Moroccan Arch Silhouette Clip-path */
+.moroccan-arch {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 0 100%, 0 25%);
+}
+
+.moroccan-dome {
+  clip-path: path("M 0,200 C 0,100 100,50 200,0 C 300,50 400,100 400,200 L 400,600 L 0,600 Z");
+}
