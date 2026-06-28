@@ -50,7 +50,7 @@ export default function Home() {
         {/* Background Image Overlay with parallax/slow fade vibe */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1548625149-720754981174?q=80&w=1800&auto=format&fit=crop" 
+            src="/sahara_hero.png" 
             alt="Moroccan Sahara Sunset" 
             className="w-full h-full object-cover brightness-75 scale-105 transition-transform duration-[10000ms] ease-out animate-pulse"
             style={{ animationDuration: '8s' }}
