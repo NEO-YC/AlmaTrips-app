@@ -183,11 +183,12 @@ export default function Home() {
                 <div className="absolute -inset-4 rounded-3xl border-2 border-saffron/40 rotate-3 -z-10"></div>
                 <div className="absolute -inset-4 rounded-3xl bg-terracotta/5 -rotate-2 -z-20"></div>
                 {/* Main image */}
-                <img 
-                  src="https://images.unsplash.com/photo-1597212618440-806262de474b?q=80&w=600&auto=format&fit=crop" 
-                  alt="עלמה מרוקו" 
-                  className="rounded-2xl w-full h-[450px] object-cover shadow-lg moroccan-border"
-                />
+                <div className="rounded-2xl w-full h-[450px] shadow-lg moroccan-border bg-sand-dark flex flex-col items-center justify-center gap-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-28 h-28 text-charcoal/20">
+                    <path fillRule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-charcoal/30 text-sm font-medium">תמונה תתעדכן בקרוב</p>
+                </div>
                 
                 {/* Info Overlay Badge */}
                 <div className="absolute bottom-4 right-4 bg-charcoal text-sand p-4 rounded-xl shadow-lg border border-saffron/20 max-w-xs">
