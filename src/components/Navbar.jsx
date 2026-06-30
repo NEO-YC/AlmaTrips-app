@@ -46,7 +46,7 @@ export default function Navbar() {
     }
   };
 
-  const whatsappNumber = "972507654321"; // Dummy boutique number
+  const whatsappNumber = "972506789303"; // Updated boutique number
   const encodedText = encodeURIComponent("היי, אשמח לקבל פרטים ולהתייעץ לגבי טיול בוטיק מותאם אישית למרוקו! 🇲🇦");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
@@ -63,7 +63,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl md:text-2xl font-extrabold tracking-wider text-charcoal group-hover:text-terracotta transition-colors duration-300">
-                קסם מרוקו
+               עלמרוקו
               </span>
               <span className="text-[10px] md:text-xs tracking-[0.2em] text-saffron font-medium -mt-1 uppercase">
                 Maghrib Boutique

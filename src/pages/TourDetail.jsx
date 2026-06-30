@@ -36,7 +36,7 @@ export default function TourDetail() {
   }
 
   // Create WhatsApp URL
-  const whatsappNumber = "972507654321";
+  const whatsappNumber = "972506789303";
   const messageText = `היי, אשמח לקבל פרטים ולהירשם לטיול ${tour.title}`;
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
 

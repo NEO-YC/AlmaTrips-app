@@ -3,7 +3,7 @@ import { Mail, Phone, Instagram, Facebook, Compass } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const whatsappNumber = "972507654321";
+  const whatsappNumber = "972506789303";
   const encodedText = encodeURIComponent("היי, אשמח לקבל פרטים לגבי טיולי הבוטיק למרוקו!");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
@@ -68,7 +68,7 @@ export default function Footer() {
             <ul className="space-y-3.5 text-sm">
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-terracotta shrink-0" />
-                <a href="tel:0507654321" className="hover:text-saffron transition-colors">050-7654321</a>
+                <a href="tel:0506789303" className="hover:text-saffron transition-colors">050-6789303</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-terracotta shrink-0" />

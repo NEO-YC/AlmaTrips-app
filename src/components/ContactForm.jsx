@@ -2,7 +2,7 @@ import React from 'react';
 import { Phone, Mail, MessageCircle } from 'lucide-react';
 
 export default function ContactForm() {
-  const whatsappNumber = "972507654321";
+  const whatsappNumber = "972506789303";
   const encodedText = encodeURIComponent("היי, אשמח לקבל פרטים ולהתייעץ לגבי טיול בוטיק מותאם אישית למרוקו! 🇲🇦");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
@@ -17,7 +17,7 @@ export default function ContactForm() {
         </span>
         
         <h3 className="text-2xl md:text-3xl font-black text-charcoal">
-          שנדבר על כוס תה מרוקאי? ☕
+         מעוניינים לסגור טיול?
         </h3>
         
         <p className="text-charcoal-light/90 text-sm md:text-base leading-relaxed">
@@ -40,11 +40,11 @@ export default function ContactForm() {
         {/* Secondary Contact Actions */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-sand-dark mt-6 text-sm text-charcoal-light font-medium">
           <a
-            href="tel:0507654321"
+            href="tel:0506789303"
             className="flex items-center justify-center md:justify-start gap-2.5 hover:text-terracotta transition-colors py-2"
           >
             <Phone className="h-5 w-5 text-terracotta shrink-0" />
-            <span>התקשרו אלינו: 050-7654321</span>
+            <span>התקשרו אלינו: 050-6789303</span>
           </a>
           <a
             href="mailto:info@kesem-morocco.co.il"

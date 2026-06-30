@@ -190,13 +190,13 @@ export default function Home() {
                   <p className="text-charcoal/30 text-sm font-medium">תמונה תתעדכן בקרוב</p>
                 </div>
                 
-                {/* Info Overlay Badge */}
+                {/* Info Overlay Badge
                 <div className="absolute bottom-4 right-4 bg-charcoal text-sand p-4 rounded-xl shadow-lg border border-saffron/20 max-w-xs">
                   <p className="text-xs text-saffron font-bold">החזון שלנו</p>
                   <p className="text-[11px] text-sand-dark/90 leading-relaxed mt-1">
                     "לחוות את מרוקו כאורחים רצויים בבית מקומי, ולא כתיירים חולפים."
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -208,9 +208,6 @@ export default function Home() {
               </h2>
               
               <div className="space-y-4 text-charcoal-light/95 leading-relaxed text-sm md:text-base">
-                <p>
-                  נעים להכיר, אני עלמה. החברים קוראים לי "חברה של סבתא" בגלל החמימות, אהבת האדם והיכולת שלי לחבר בין אנשים. מרוקו בשבילי היא לא רק יעד תיירותי - היא פעימת הלב השנייה שלי, המולדת של הוריי ומקום שבו נשמתי מרגישה בבית.
-                </p>
                 <p>
                   במהלך עשרים השנים האחרונות חציתי את מרוקו לאורכה ולרוחבה. יצרתי קשרים אישיים עמוקים עם משפחות ברבריות בהרי האטלס, בעלי מלאכה מסורתיים בשווקים של פאס, ושפים מקומיים בריאדים של מרקש. הקשרים האלו הם המפתח שמאפשר לי לפתוח עבורכם דלתות שבפני תייר רגיל נשארות נעולות.
                 </p>
@@ -304,7 +301,7 @@ export default function Home() {
               </p>
 
               <div className="space-y-4 pt-4">
-                <div className="flex items-center gap-3">
+                {/* <div className="flex items-center gap-3">
                   <div className="bg-white p-2.5 rounded-lg border border-sand-dark text-terracotta">
                     <Compass className="h-5 w-5" />
                   </div>
@@ -312,7 +309,7 @@ export default function Home() {
                     <p className="text-xs text-charcoal-light font-medium">סגנון הטיול</p>
                     <p className="text-sm font-bold text-charcoal">טיולי בוטיק בקבוצות קטנות ואינטימיות</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-3">
                   <div className="bg-white p-2.5 rounded-lg border border-sand-dark text-terracotta">
                     <Star className="h-5 w-5" />
