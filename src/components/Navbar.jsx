@@ -25,6 +25,36 @@ export default function Navbar() {
     setIsOpen(false);
   }, [location]);
 
+  // Lock body scroll when mobile menu is open (works on iOS too)
+  useEffect(() => {
+    if (isOpen) {
+      const scrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+      document.body.style.overflow = 'hidden';
+    } else {
+      const scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+      }
+    }
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+      }
+    };
+  }, [isOpen]);
+
   const navLinks = [
     { name: 'דף הבית', path: '/' },
     { name: 'הטיולים שלנו', path: '/#tours-section' },
@@ -118,10 +148,13 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Sidebar Navigation */}
-      <div className={`md:hidden fixed inset-0 top-[64px] bg-sand/98 backdrop-blur-md transition-all duration-300 z-40 ${
-        isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
-      }`}>
-        <div className="px-6 py-8 flex flex-col space-y-6 h-full bg-zellij">
+      <div 
+        className={`md:hidden fixed inset-0 top-[64px] bg-sand/98 backdrop-blur-md transition-all duration-300 z-40 overflow-y-auto overscroll-contain ${
+          isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
+        }`}
+        onTouchMove={(e) => e.stopPropagation()}
+      >
+        <div className="px-6 py-8 flex flex-col space-y-6 min-h-full bg-zellij">
           {navLinks.map((link) => (
             <a
               key={link.name}
